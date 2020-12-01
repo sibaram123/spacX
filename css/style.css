@@ -1,1 +1,160 @@
 
+*,body{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	background-color:#f2f2f2;
+	color:#333;
+	font-family:system-ui;
+	font-size:16px;
+	}
+.main{
+	width:100%;
+	max-width:1440px;
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	display:flex;
+}
+.main h2{
+	padding:15px;
+}
+.left-sec, .right-sec, .inner-col, .col-50{
+	float: left;
+	padding-right: 8px;
+    padding-left: 8px;
+}
+
+.left-sec{	
+    width: 15%;
+}
+.right-sec{
+	width: 85%;
+}
+.left-inner{
+	background-color:#fff;
+	padding:15px;
+}	
+.col-50{
+	width:50%;
+}
+.year h4{
+	text-align: center;
+	margin-top:10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+/**.year ul{
+	list-style-type:none;
+}
+.year ul li{
+	display:inline-block;
+}**/
+.col-50 a{
+	background-color: #c5e09b;
+    padding: 5px 18px;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 4px 0 4px;
+	position:relative;
+}
+.col-50 a input{
+
+    position: absolute;
+  z-index: 999;
+    left: 3px;
+    top: 0;
+    height: 32px;
+    cursor: pointer;
+}
+.year a:hover, .year a:focus, .year a.active{
+	background-color:#7cba01;
+}
+/**.year ul li:nth-child(odd) a{
+	margin-right:2px;
+}**/
+.inner-col{
+	width:25%;
+}
+
+.inner-details{
+	background-color:#fff;
+	padding:15px;
+	margin-bottom: 15px;
+	    min-height: 402px;
+}
+
+.inner-details h4{
+	margin-top:5px;
+	font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #6b80de;
+}
+.inner-details p{
+	color: #69729a;
+}
+.inner-details p span{
+	color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+.img-respo{
+	max-width: 100%;
+}
+.clear{
+	clear:both;
+}
+.row:before {
+    display: table;
+    content: " ";
+}
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+}
+.row:after {
+    clear: both;
+}
+
+@media only screen and (max-width: 1024px) {
+ .inner-col{
+	width:50%;
+}
+.left-sec {
+    width: 27%;
+}
+.right-sec {
+    width: 73%;
+}
+.year{
+	text-align:center;
+}
+}
+@media only screen and (max-width: 700px) {
+ .inner-col{
+	width:100%;
+}
+.left-sec {
+    width: 100%;
+}
+.right-sec {
+    width: 100%;
+}
+.col-50 a{
+    padding: 5px 30px;
+}
+.year{
+	text-align:center;
+}
+.img-respo {
+    width: 100%;
+}
+}
+

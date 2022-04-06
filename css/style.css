@@ -1,160 +1,451 @@
+html, body {
+	margin: 0; height: 100%; overflow:hidden;
+	font-family: Myriad Pro;
+}
+body
+{
+	/*Roboto*/
+	margin: 0px;
+	padding: 0px;
+	font-family: Myriad Pro;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+html, body, {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
 
-*,body{
-	margin: 0;
+}
+
+.pd_0{
 	padding:0;
-	box-sizing: border-box;
 }
-body{
-	background-color:#f2f2f2;
-	color:#333;
-	font-family:system-ui;
-	font-size:16px;
-	}
-.main{
-	width:100%;
-	max-width:1440px;
-	padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
+.pd_5{
+	padding:0 5px;
+}
+.mt_20{
+ margin-top:20px;
+}
+.mt_35{
+ margin-top:35px;
+}
+.mt_50{
+ margin-top:50px;
+}
+
+.slidesu
+{
+	font-family: Myriad Pro;
+	cursor:default; 
+
+	/*border: thin solid #CCC;*/
+	margin-left:auto;
+	margin-right:auto;
+
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.mytab1, .mytab2{
+	background-image: url(../images/heder-bar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 0 20px;
+    width: 100%;
+	height:100vh;
+    padding-top: 2%;
     margin-left: auto;
-	display:flex;
+    margin-right: auto;
+    position: static;
 }
-.main h2{
-	padding:15px;
-}
-.left-sec, .right-sec, .inner-col, .col-50{
-	float: left;
-	padding-right: 8px;
-    padding-left: 8px;
+.mytab2{
+	background-image: url("../images/gutwin-bar.jpg");
+	padding: 0 0px 0 35px;
+    position: relative;
 }
 
-.left-sec{	
-    width: 15%;
-}
-.right-sec{
-	width: 85%;
-}
-.left-inner{
-	background-color:#fff;
-	padding:15px;
-}	
-.col-50{
-	width:50%;
-}
-.year h4{
-	text-align: center;
-	margin-top:10px;
-    border-bottom: 1px solid #333;
-    margin-bottom: 5px;
-    line-height: 1.4;
-}
-/**.year ul{
-	list-style-type:none;
-}
-.year ul li{
-	display:inline-block;
-}**/
-.col-50 a{
-	background-color: #c5e09b;
-    padding: 5px 18px;
-    display: inline-block;
-    color: #000;
-    text-decoration: none;
-    border-radius: 4px;
-    margin: 4px 0 4px;
-	position:relative;
-}
-.col-50 a input{
-
+.leftcss
+{
+	bottom: 24%;
     position: absolute;
-  z-index: 999;
-    left: 3px;
-    top: 0;
-    height: 32px;
-    cursor: pointer;
+    z-index: 999;
+    left: 25%;
 }
-.year a:hover, .year a:focus, .year a.active{
-	background-color:#7cba01;
+.rightcss {
+    bottom: 18%;
+    position: absolute;
+    z-index: 999;
+    left: 25%;
 }
-/**.year ul li:nth-child(odd) a{
-	margin-right:2px;
-}**/
-.inner-col{
-	width:25%;
+.alltab{
 }
-
-.inner-details{
-	background-color:#fff;
-	padding:15px;
-	margin-bottom: 15px;
-	    min-height: 402px;
+.mytab2{
+	display:none;
 }
 
-.inner-details h4{
-	margin-top:5px;
-	font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #6b80de;
+.rightcss img, .leftcss img{
+	padding:10px;
+	/*border:2px solid #fff;
+	border-radius:30px;*/
 }
-.inner-details p{
-	color: #69729a;
+.leftcss-n{
+	width: 55px;
+    height: 55px;
+	position:absolute;
+    left: 10px;
+    top: auto;
+    bottom: 11%;
+    z-index: 999;
+    left: 3%;
 }
-.inner-details p span{
-	color: #333;
-    font-weight: bold;
-    font-size: 16px;
-}
-.img-respo{
-	max-width: 100%;
-}
-.clear{
-	clear:both;
-}
-.row:before {
-    display: table;
-    content: " ";
-}
-.row{
-    margin-right: -8px;
-    margin-left: -8px;
-}
-.row:after {
-    clear: both;
+.leftcss-n img{
+	padding: 10px;
+    background-color: #fff;
 }
 
-@media only screen and (max-width: 1024px) {
- .inner-col{
-	width:50%;
+button.close {
+    margin-top: 0;
+    position: absolute;
+    right: 1%;
+    z-index: 999;
+    top: 2%;
 }
-.left-sec {
-    width: 27%;
+button.close, button.close:hover{
+	background-color: #00adeb;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 30px;
+	opacity:1;
+	outline:0;
 }
-.right-sec {
-    width: 73%;
+.leftcss-n{
+	width: 55px;
+    height: 55px;
+	position:absolute;
+    left: 10px;
+    top: auto;
+    bottom: 11%;
+    z-index: 999;
+    left: 3%;
 }
-.year{
-	text-align:center;
+.leftcss-n img{
+	padding: 10px;
+    background-color: #fff;
 }
+@media screen and (max-width: 1920px){
+	.mytab1, .mytab2{
+		width: 100%;
+		height:100vh;
+	}
+	.mytab1{
+			padding: 10rem 7rem;
+		}
+	.mytab2 {
+		padding: 0 20rem;
+		padding-top: 2%;
+	}
+	.sc-2a{
+		padding: .7rem 0 0 4rem;
+	}
+	.sc-2b{
+		padding: .7rem 0 0 20rem;
+	}
+	.sc-2c{
+		padding: .7rem 0 0 25.5rem;
+	}
+	.rightcss, .leftcss {
+		bottom: 0;
+		left: 2%;
+	}
+		.ref{
+		margin-top:4rem;
+	}
 }
-@media only screen and (max-width: 700px) {
- .inner-col{
-	width:100%;
+@media screen and (max-width: 1920px) and (max-height: 1080px) and (min-height: 1024px){
+	.mytab2 {
+		padding: 0 16rem;
+		padding-top: 2.5%;
+	}
+	.sc-2a{
+		padding: 2rem 2rem 0 5rem;
+	}
+	.sc-2b{
+		padding: 2rem 2rem 0 29rem;
+	}
+	.sc-2c{
+		padding: 2rem 2rem 0 38rem;
+	}
+
 }
-.left-sec {
-    width: 100%;
-}
-.right-sec {
-    width: 100%;
-}
-.col-50 a{
-    padding: 5px 30px;
-}
-.year{
-	text-align:center;
-}
-.img-respo {
-    width: 100%;
-}
+@media screen and (max-width: 1680px){
+	.mytab1 {
+	  padding: 6rem 23rem;
+	}
+	.mytab2 {
+		padding: 0 22rem;
+		padding-top: 2%;
+	}
 }
 
+@media screen and (max-width: 1366px){
+.mt-5{
+  margin-top:10px;
+}
+.mytab1, .mytab2 {
+	width: 100%;
+	height:100vh;
+}
+.mytab1 {
+  padding: 6rem 21rem;
+}
+.mytab2 {
+    padding: 0 22rem;
+    padding-top: 2.5%;
+}
+.sc-2a{
+	padding: .7rem 0 0 3rem;
+}
+.sc-2b{
+	padding: .7rem 0 0 18rem;
+}
+.sc-2c{
+	padding: .7rem 0 0 23.5rem;
+}
+.ref{
+		margin-top:2rem;
+	}
+.rightcss, .leftcss {
+    bottom: -5px;
+    left: 2.5%;
+}
+}
+@media screen and (max-width: 1366px) and (min-height: 768px){
+	.mytab1 {
+		padding: 10rem 16rem;
+	}
+	.mytab2 {
+	  padding: 0 13rem;
+	  padding-top: 3%;
+	}
+	.sc-2a{
+		padding: 1rem 1rem 0 3rem;
+	}
+	.sc-2b{
+		padding: 1rem 1rem 0 20rem;
+	}
+	.sc-2c{
+		padding: 1rem 1rem 0 26rem;
+	}
+	.rightcss, .leftcss {
+		bottom: 0;
+	}
+}
+@media screen and (max-width: 1280px){
+	.mytab1, .mytab2{
+		width: 100%;
+		height: 100vh;
+	}
+	.mytab1{
+		padding: 10rem 7rem;
+	}
+	.mytab2{
+		padding: 0 16rem;
+		padding-top: 20%;
+	}
+	.sc-2a {
+	  padding: 1rem 0 0 4rem;
+	}
+	.sc-2c {
+		padding: 2rem 0 0 21rem;
+	}
+	.sc-2b {
+		padding: 2rem 0 0 27rem;
+	}
+	.rightcss, .leftcss {
+		bottom: 0;
+		left: 1.5%;
+	}
+	
+}
+@media screen and (max-width: 1280px) and (max-height: 800px) and (min-height: 790px) {
+	.mytab1{
+			padding: 10rem 7rem;
+		}
+	.mytab2{
+			padding: 0 5rem;
+			padding-top: 3%;
+		}
+	.sc-2a {
+	  padding: 1rem 2rem 0 4rem;
+	}
+	.sc-2b {
+		padding: 2rem 2rem 0 21rem;
+	}
+	.sc-2c {
+		padding: 2rem 2rem 0 27rem;
+	}
+	.rightcss, .leftcss {
+		left: 1.5%;
+		bottom: 0;
+	}
+}
+
+@media screen and (max-width: 1280px) and (height: 768px){
+ .mytab2{
+    padding: 0 8rem;
+    padding-top: 3%;
+}
+.sc-2a {
+	  padding: 1rem 2rem 0 4rem;
+	}
+	.sc-2b {
+		padding: 2rem 2rem 0 21rem;
+	}
+	.sc-2c {
+		padding: 2rem 2rem 0 27rem;
+	}
+.rightcss, .leftcss {
+	bottom: 0;
+	left: 1.5%;
+}
+}
+@media screen and (max-width: 1080px) and (max-height: 810px) and (min-height: 800px){
+	.mytab2 {
+		padding: 0 5rem;
+		padding-top: 0px;
+		padding-top: 13%;
+	}
+}
+@media screen and (max-width:1024px){
+	 .mytab1 {
+		padding: 8rem 7rem;
+	}
+	 .mytab2{
+		padding: 0px 8rem;
+		padding-top: 3%;
+	}
+	.sc-2a {
+		padding: 2rem 0 0 3rem;
+	}
+
+	.sc-2c {
+		padding: 2rem 0 0 22rem;
+	}
+	.sc-2b {
+		padding: 2rem 0 0 17rem;
+	}
+	.rightcss, .leftcss {
+		bottom: -5px;
+	}
+}
+@media screen and (max-width:1024px) and (height: 768px){
+	.mytab2 {
+		padding: 0px 6rem;
+		padding-top: 10%;
+	}
+}
+@media screen and (max-width:992px){
+	.mytab1, .mytab2{
+		width: 100%;
+	}
+	.rightcss, .leftcss {
+		bottom: -11px;
+	}
+	.mytab2 {
+		padding: 0 8rem;
+		padding-top: 3%;
+	}
+	.rightcss img, .leftcss img {
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width:767px){
+	.mytab1, .mytab2{
+		   max-width:767px;	
+		    height: 100vh;
+	}
+	.mytab2 {
+		padding: 0 7rem;
+		padding-top: 22%;
+	}
+	.sc-2b {
+		padding: 1rem 0 0 9rem;
+	}
+	.sc-2c{
+		padding: 1rem 0 0 12rem;
+	}
+	.rightcss img, .leftcss img {
+		padding: 18px;
+	}
+	.rightcss, .leftcss {
+		left: 2%;
+	}
+}
+@media screen and (max-width:740px){
+	.mytab1, .mytab2{
+		max-width:740px;
+	}
+	.mytab2 {
+	}
+	.rightcss, .leftcss {
+		left: 18%;
+	}
+}
+@media screen and (max-width:640px){
+	.mytab1, .mytab2{
+	}
+	
+}
+@media screen and (max-width:480px){
+	.mytab1, .mytab2{
+		width: 100%;
+		max-width:480px;
+		background-size: contain;
+	}
+	.mytab2 {
+		padding: 0 4rem;
+		padding-top: 26%;
+	}
+	.sc-2b {
+		padding: .81rem 0 0 5rem;
+	}
+	.sc-2c {
+		padding: .81rem 0 0 7rem;
+	}
+	.rightcss, .leftcss {
+		bottom: auto;
+		top: 22rem;
+		left: 2%;
+	}
+	.rightcss img, .leftcss img {
+		padding: 20px;
+	}
+	
+}
+@media screen and (max-width:390px){
+	.rightcss, .leftcss {
+		top: 20.5rem;
+	}
+}
+@media screen and (max-width:375px){
+	.mytab1, .mytab2{
+		background-size: contain;
+	}
+	.rightcss, .leftcss {
+		top: 19.7rem;
+	}
+}
+@media screen and (max-width:360px){
+	.rightcss, .leftcss {
+		top: 18.8rem;
+	}
+	.mytab1, .mytab2{
+	
+		background-size: contain;
+	}
+}
